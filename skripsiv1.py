@@ -61,7 +61,7 @@ sidebar('img/sidebar.jpg')
 st.markdown(f"""
       <style>
    
-      .st-emotion-cache-k7vsyb h1, .st-emotion-cache-k7vsyb h2, .st-emotion-cache-k7vsyb h3, .st-emotion-cache-k7vsyb h4, .st-emotion-cache-k7vsyb h5, .st-emotion-cache-k7vsyb h6, .st-emotion-cache-k7vsyb span,.st-emotion-cache-ul70r3 p{{
+      .stMainBlockContainer, .block-container, .st-emotion-cache-13ln4jf ,.ea3mdgi5 p{{
           color: black;       }}
       .block-container{{
           background: white;       }}
