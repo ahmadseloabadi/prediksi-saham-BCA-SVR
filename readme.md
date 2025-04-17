@@ -1,5 +1,8 @@
 # Prediksi Harga Saham Bank Central Asia (BCA) Menggunakan Support Vector Regression (SVR)
 
+![image](https://github.com/user-attachments/assets/0a5f2d0c-2a5a-42a3-bec8-2d79a5de03c1)
+
+
 ## Deskripsi Proyek
 
 Proyek ini bertujuan untuk memprediksi harga saham Bank Central Asia (BCA) menggunakan algoritma machine learning Support Vector Regression (SVR). Prediksi dilakukan dengan menganalisis data historis harga saham dan mengidentifikasi pola yang dapat digunakan untuk memperkirakan harga di masa depan.
@@ -106,10 +109,9 @@ Data diambil menggunakan API Yahoo Finance dan diproses untuk analisis lebih lan
 
 Performa model SVR dievaluasi menggunakan metrik:
 
-- Mean Absolute Error (MAE): 245.67
-- Mean Squared Error (MSE): 97234.89
-- Root Mean Squared Error (RMSE): 311.82
-- R-squared (R²): 0.89
+- Mean Absolute Percentage Error (MAPE) kernel RBF: 0.08%
+
+- Mean Absolute Percentage Error (MAPE) kernel Linear: 0.04%
 
 Visualisasi hasil prediksi menunjukkan bahwa model cukup baik dalam mengikuti tren harga saham BCA, dengan beberapa penyimpangan pada periode volatilitas tinggi.
 
