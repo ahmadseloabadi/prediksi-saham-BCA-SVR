@@ -14,7 +14,7 @@ import plotly.graph_objs as go
 import base64
 from datetime import datetime, timedelta
 from sklearn.model_selection import train_test_split
-
+import time
 from pandas.tseries.offsets import BDay 
 
 # styling for app
@@ -26,6 +26,7 @@ def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
+
 def set_background(png_file):
     bin_str = get_base64(png_file)
     page_bg_img = '''
@@ -74,13 +75,15 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 @st.cache_data
 def load_data():
-    data = yf.download("BBRI.JK", START)
+    time.sleep(5) 
+    data = yf.download("BBRI.JK", start=START,end=TODAY)
     data.reset_index(inplace=True)
     return data
 
 
 data=load_data()
 datas=data.copy()
+print(datas)
 tanggal=data['Date'].iloc[-1].strftime("%Y-%m-%d")
 durasi=len(data['Date'])
 is_today = date.today().strftime("%Y-%m-%d")

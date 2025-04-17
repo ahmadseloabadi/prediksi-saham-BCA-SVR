@@ -5,7 +5,7 @@ https://finance.yahoo.com/quote/BBRI.JK?.tsrc=fin-srch
 # untuk menjalankan aplikasi
 
 -step 1 :buka terminal bisa dengan crtl+j dan icon ke-6 ke kiri dari icon close(X)
--step2 : ketik --> streamlit run skripsiv1.py
+-step2 : ketik --> streamlit run bca_prediction_svm.py
 
 # untuk memberhentikan aplikasi
 
